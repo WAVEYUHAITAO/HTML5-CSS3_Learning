@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      span {
+        color: rgb(61, 241, 15);
+
+        /* 字体 斜粗体 大小/行高 样式 */
+        font: oblique bold 80px/100px Arial;
+      }
+      p {
+        /* 缩进 em中文字长度 */
+        /* 行高和块高度一样字体就会行居中 */
+        text-indent: 2em;
+        line-height: 30px;
+      }
+      .l1 {
+        text-decoration: underline;
+      }
+      .l2 {
+        text-decoration: line-through;
+      }
+      .l3 {
+        text-decoration: overline;
+        text-align: center;
+      }
+      img {
+        /* 与图片同行的问题居中 */
+        vertical-align: middle;
+      }
+      a[class="link"] {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- span标签突出显示一些字 -->
+    <p>欢迎学习<span>Java网页</span></p>
+    <p>
+      考场外紧张到没有灵魂的爸爸 网友：没有表情但又表情丰富 7日，陕西西安
+      随着考生们陆续进入考场 等候在考点外的家长们表情各不相同
+      视频中，这位父亲目视前方 脸上的表情可以说没有表情 但又感觉表情丰富
+      手指捻着小纸片 肉眼可见的紧张
+    </p>
+    <p class="l1">123123</p>
+    <p class="l2">123123</p>
+    <p class="l3">123123</p>
+    <p>
+      <img src="../resources/image/可爱汤圆.png" alt="汤圆" />
+      你好
+    </p>
+    <a href="https://www.baidu.com" class="link">百度链接</a>
+  </body>
+</html>

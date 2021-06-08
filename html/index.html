@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- 规范，<style>可以编写css代码，每一个声明，最好使用分号结尾
+        选择器{
+            声明1；
+            声明2；
+            声明3；
+        } 
+
+      css的优势：
+      1.内容和表现分离
+      2.网页结构表现统一，可以实现复用
+      3.样式十分的丰富
+      4.建议使用独立于html的css文件
+      5.利于SEO，容易被搜索引擎收录
+      
+      css的3种导入方式
+      1.外部样式表 最常用 
+      2.内部样式表  内外部样式采取就进原则,哪个离代码近就显示哪个颜色
+      3.行内样式表 行内样式表优先级最高
+
+    2选择器
+    2.1基本选择器
+        1.标签选择器
+        2.类选择器
+        3.id选择器
+
+
+
+
+    -->
+    <!-- CSS2.0导入式：下面这种方法和link一样但是一般不用这种都是使用link标签 ，弊端先导入框架再渲染如果文件大，所以慢慢废弃 -->
+    <!-- <style>
+      @import url("../css/style.css");
+    </style> -->
+    <style>
+      h1 {
+        color: green;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- 行内样式，在标签元素种，编写css -->
+    <h1>我是标签</h1>
+  </body>
+</html>

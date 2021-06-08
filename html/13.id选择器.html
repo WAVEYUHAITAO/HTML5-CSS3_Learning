@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #hito {
+        color: hotpink;
+      }
+      .hito {
+        color: green;
+      }
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <!-- id选择器必须保证全局唯一 
+    这里通过实验id选择器>类选择器>标签选择器-->
+  <body>
+    <h1 id="hito" class="hito">标题1</h1>
+    <h1 id="haitao">标题1</h1>
+    <h1 class="hito">标题1</h1>
+    <h1 class="haitao">标题1</h1>
+  </body>
+</html>
