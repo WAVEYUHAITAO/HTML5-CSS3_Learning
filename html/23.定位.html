@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 相对定位
+    相对于自己原来的位置进行便宜
+-->
+    <style>
+      div {
+        margin: 10px;
+        padding: 5px;
+        font-size: 10px;
+        line-height: 25px;
+      }
+      #father {
+        border: 1px solid #666;
+        position: relative;
+      }
+      #first {
+        border: 1px dashed #666;
+        background-color: brown;
+        /* 子级文字大小可以覆盖父级设定的字体大小 */
+        font-size: 20px;
+        position: relative; /*相对定位，是偏移，父级边框不会塌陷*/
+        top: -20px;
+        left: 20px;
+      }
+      #second {
+        border: 1px dashed #666;
+        background-color: rgb(0, 255, 42);
+        position: absolute; /*绝对定位*/
+        /* 没有父元素定位的情况下，相对浏览器定位 */
+        /* 假设父级元素存在定位，就会相对于父级进行便宜 */
+        width: 80px;
+        height: 80px;
+        right: 0px;
+        bottom: 0px;
+      }
+      #third {
+        border: 1px dashed #666;
+        background-color: rgb(255, 0, 128);
+        /* 固定定位，可以用来做回到顶部或者右侧导航 */
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="father">
+      <div id="first">第一个盒子</div>
+      <div id="second">第二个盒子</div>
+      <div id="third">第三个盒子</div>
+    </div>
+  </body>
+</html>

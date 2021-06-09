@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #father {
+        border: 1px solid green;
+        width: auto;
+        /* overflow解决浮动父级边框塌陷 */
+        /* overflow: hidden; */
+      }
+      #father:after {
+        clear: both;
+        /* 效果等于在最下层添加一个div 然后css里设置clear：both */
+        /* 但是空的div是不好的，代码不好有多的空余div所以实践都是用父级伪类解决 */
+      }
+
+      .layer01 {
+        border: 1px solid red;
+        display: inline-block;
+        float: left;
+      }
+      .layer02 {
+        border: 1px solid red;
+        display: inline-block;
+        float: left;
+        /* clear: both; */
+      }
+      .layer03 {
+        border: 1px solid red;
+        display: inline-block;
+        float: right;
+      }
+      /* clear:right 右侧不允许浮动元素 */
+      /* clear:left */
+      /* clear:both */
+      .layer04 {
+        border: 1px solid red;
+        display: inline-block;
+        float: right;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <p>浮动 float:xxxx 变成行内元素</p>
+    <p>清除浮动 clear:both 重新变为块级元素</p>
+    <p>增加父级元素高度，浮动的时候可以在边框里</p>
+    <div id="father">
+      <div class="layer01">
+        <img src="../resources/image/可爱汤圆.png" alt="" />
+      </div>
+      <div class="layer02">
+        <img src="../resources/image/缺氧.png" alt="" />
+      </div>
+      <div class="layer03">
+        <img src="../resources/image/图片标签.png" alt="" />
+      </div>
+
+      <div class="layer04">浮动元素盒子可以左浮动，也可以右浮动</div>
+      <!-- 在最下层添加一个div 然后css里设置clear：both -->
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

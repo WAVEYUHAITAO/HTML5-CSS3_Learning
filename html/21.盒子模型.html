@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* border:粗细 样式 颜色  */
+      /* 外边距的作用是可以居中 */
+      body {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+      }
+      #box {
+        width: 300px;
+        border: 1px solid red;
+        margin: 100px auto;
+        border-radius: 5px;
+      }
+      form {
+        background: darkcyan;
+      }
+      div:nth-of-type(1) input {
+        border: 3px solid black;
+        border-radius: 10px 10px;
+      }
+      div:nth-of-type(2) {
+        padding: 0px 0px;
+        margin: 0;
+      }
+      h2 {
+        font-size: 16px;
+        background-color: green;
+        line-height: 30px;
+      }
+
+      div img {
+        /* 让图片直接居中可以先设置图片显示为block，然后设置margin */
+        display: block;
+        border: 1px solid red;
+        border-radius: 30px;
+        box-shadow: 10px 10px 80px yellow;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <h2>会员登陆</h2>
+      <form action="#">
+        <div>
+          <span>姓名：</span>
+          <input type="text" />
+        </div>
+        <div>
+          <span>密码：</span>
+          <input type="text" />
+        </div>
+        <div>
+          <span>邮箱：</span>
+          <input type="text" />
+        </div>
+      </form>
+    </div>
+    <div id="box1">
+      <img src="../resources/image/缺氧.png" alt="缺氧" />
+    </div>
+  </body>
+</html>
