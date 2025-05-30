@@ -6,7 +6,7 @@
 </head>
 <body>
 <!--这里定义了一个锚标记在body的最上面-->
-<a name="top"></a>
+<a id="top"></a>
 <!--a标签
 href：必填，表示要跳转到哪个页面
 target:四种打开方式 _blank _self
@@ -29,7 +29,7 @@ target:四种打开方式 _blank _self
   <img src="../resources/image/可爱汤圆.png" alt="可爱汤圆">
 </a>
 <a href="https://www.baidu.com">
-  <img src="../resources/image/可爱汤圆.png" alt="可爱汤圆">
+  <img src="../resources/image/可爱汤圆.png" alt="可爱汤圆" width="500" height="300">
 </a><br/>
 
 
@@ -37,8 +37,8 @@ target:四种打开方式 _blank _self
 1.需要一个锚标记
 2.跳转到这个标记 用#+name
 -->
-<a href="#top">回到顶部</a><br/>
-
+<a href="#top" target="_blank">回到顶部</a><br/>
+<a href="3.图像标签.html#bot" target="_blank">回到3.底部</a><br/>
 <!--功能性链接
 邮件链接： mailto:
 QQ链接
