@@ -9,11 +9,14 @@
       /* 避免使用class  id选择器，而使用结构伪类选择器 */
       /* ul的第一个子元素 */
       /* 可以被hover改变颜色 */
+
       ul li:first-child {
-        background-color: green;
+        background-color: #1bd31b;
       }
       /* ul的最后一个子元素 */
-
+      ul li:last-child {
+        background-color: aqua;
+      }
       ul li:nth-child(3) {
         background-color: blue;
       }
@@ -23,7 +26,7 @@
       /* 选中p1：定位到父元素，选择当前的第一个元素 */
       p:nth-child(2) {
         /* 选择当前p元素的父级元素里第n个类型为p的元素，优先级高于普通伪类选择器
-        这种nth-child(n)的选择题不可被hover改变颜色 */
+        就近原则，如果在hover之下就不能被hover改变颜色*/
         background-color: brown;
       }
     </style>

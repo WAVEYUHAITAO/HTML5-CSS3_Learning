@@ -7,20 +7,53 @@
     <title>Document</title>
 
     <style>
+      .demo{
+        display: block flex;
+        justify-content: space-around;
+      }
       .demo a {
         float: left;
-        display: block;
-        height: 50px;
+        display: block flex;
+        height: 30px;
         width: 50px;
         border-radius: 10px;
-        background-color: blue;
-        color: white;
-        text-align: center;
-        line-height: 50px;
+        justify-content: center;
+        background: #6f6fe4;
+        color: #40f407;
+        /*text-align: center;*/
+        line-height: 30px;
         /* 去下划线 */
         text-decoration: none;
       }
-
+      .demo a:hover {
+        float: left;
+        display: block flex;
+        height: 70px;
+        width: 70px;
+        border-radius: 10px;
+        background: #6f6fe4;
+        color: #b00fef;
+        font: bold 50px Arial;
+        /*text-align: center;*/
+        line-height: 70px;
+        /* 去下划线 */
+        text-decoration: none;
+      }
+      .demo a:active {
+        float: left;
+        display: block flex;
+        height: 90px;
+        width: 90px;
+        border-radius: 10px;
+        background: #6f6fe4;
+        color: #ef0f4b;
+        font: bold 50px Arial;
+        /*text-align: center;*/
+        line-height: 70px;
+        justify-content: center;
+        /* 去下划线 */
+        text-decoration: none;
+      }
       /* 存在id属性的元素 属性名=属性值（正则）*/
       /* 存在id属性的元素  a[]{} */
       /* 遵循就近原则 */
@@ -32,7 +65,7 @@
         background-color: black;
       }
 
-      a[id] {
+      a[id*="third"] {
         background-color: rgb(255, 0, 170);
       }
 
@@ -50,22 +83,15 @@
   <body>
     <p class="demo">
       <a href="https://www.baidu.com" class="links item first" id="first">1</a>
-      <a
-        href=""
-        class="links item active"
-        target="_blank"
-        title="test"
-        id="second"
-        >2</a
-      >
-      <a href="images/123.html" class="links item">3</a
-      ><a href="images/123.png" class="links item">4</a
-      ><a href="images/123.jpg" class="links item">5</a
-      ><a href="abc" class="links item">6</a
-      ><a href="/a.pdf" class="links item">7</a
-      ><a href="/abc.pdf" class="links item">8</a
-      ><a href="abc.doc" class="links item">9</a
-      ><a href="abcd.doc" class="links item last">10</a>
+      <a href="" class="links item active" target="_blank" title="test" id="second">2</a>
+      <a href="images/123.html" class="item" id="third">3</a>
+      <a href="images/123.png" class="item">4</a>
+      <a href="images/123.jpg" class="links item">5</a>
+      <a href="abc" class="links item">6</a>
+      <a href="/a.pdf" class="links item">7</a>
+      <a href="/abc.pdf" class="links item">8</a>
+      <a href="abc.doc" class="links item">9</a>
+      <a href="abcd.doc" id="ab third" class="links item last">10</a>
     </p>
   </body>
 </html>

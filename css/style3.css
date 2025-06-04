@@ -1,0 +1,19 @@
+h1 {
+    color: #f11032;
+    background: #642964;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hito {
+    color: greenyellow;
+}
+.haitao {
+    color: hotpink;
+}
+#hito {
+    color: aqua;
+}

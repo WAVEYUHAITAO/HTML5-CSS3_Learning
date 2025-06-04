@@ -17,7 +17,13 @@
       }
       #father {
         border: 1px solid #666;
+        /*使用position: relative;可以相对于元素正常位置进行偏移。通过设置top, right, bottom,
+        left属性来移动元素的位置，但该元素原本所占的空间仍然保留。*/
         position: relative;
+        top:100px;
+        left:100px;
+        height:100px;
+        width: 500px;
       }
       #first {
         border: 1px dashed #666;
@@ -25,18 +31,19 @@
         /* 子级文字大小可以覆盖父级设定的字体大小 */
         font-size: 20px;
         position: relative; /*相对定位，是偏移，父级边框不会塌陷*/
-        top: -20px;
-        left: 20px;
+        margin:0;
       }
       #second {
-        border: 1px dashed #666;
+        border: 3px dashed #c81111;
         background-color: rgb(0, 255, 42);
+        /*position: absolute;使元素脱离标准文档流，根据最近的非static定位祖先元素进行定位。
+        如果没有这样的祖先，则依据初始包含块（通常是浏览器窗口）。绝对定位的元素可以通过top, right, bottom, left来精确定位。*/
         position: absolute; /*绝对定位*/
         /* 没有父元素定位的情况下，相对浏览器定位 */
-        /* 假设父级元素存在定位，就会相对于父级进行便宜 */
+        /* 假设父级元素存在定位，就会相对于父级进行定位 */
         width: 80px;
         height: 80px;
-        right: 0px;
+        right: -20px;
         bottom: 0px;
       }
       #third {
@@ -46,8 +53,9 @@
         position: fixed;
         width: 50px;
         height: 50px;
-        bottom: 0;
-        right: 0;
+        right: 100px;
+        top:100px;
+        bottom: 100px;
       }
     </style>
   </head>

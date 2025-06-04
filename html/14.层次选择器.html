@@ -10,14 +10,19 @@
             1.后代选择器
             2.子选择器
             3.相邻兄弟选择器
-            4.通用选择器 */
+            4.通用选择器
+             这些选择器都大于标签选择器
+             其中相邻兄弟选择器和通用选择器大于后代选择器和子选择器
+             然后后代和子选择器遵循就近
+             相邻兄弟和通用选择器遵循就近*/
+
+      p {
+        background-color: green;
+      }
 
       body p {
         /* 这是后代选择器，大于普通的标签选择器 */
         background-color: red;
-      }
-      p {
-        background-color: green;
       }
 
       body > p {
@@ -27,14 +32,18 @@
       }
 
       .active ~ p {
-        /* 通用选择器，当前选中元素同级向下的所有兄弟元素
+        /* 通用选择器，当前选中元素有同级向下的所兄弟元素
         如果遇到相邻兄弟选择器遵循就近原则 */
         background-color: aqua;
       }
+
       .active + p {
         /* 相邻兄弟选择器，指向下一个
         这个的优先级高于后代选择器，子选择器，标签选择器，不用遵循就近 */
         background-color: brown;
+      }
+      ul p:hover {
+        background-color: #e3c11c;
       }
     </style>
   </head>
@@ -43,7 +52,7 @@
     <p class="active">p1</p>
     <p>p2</p>
     <p>p3</p>
-    <ul>
+    <ul class="live">
       <li><p>p4</p></li>
       <li><p>p5</p></li>
       <li><p>p6</p></li>

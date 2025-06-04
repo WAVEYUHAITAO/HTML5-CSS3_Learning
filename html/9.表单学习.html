@@ -23,11 +23,12 @@ required 非空判断，不能为空，在输入框中
 pattern 正则表达式判断 用于邮箱，手机号，url的自定义判断
 -->
 <form action="1.我的第一个网页.html" method="post">
-  <p>名字：<input type="text" name="username" maxlength="8" size="30" placeholder="请输入用户名" required></p>
-  <p>密码：<input type="password" name="pwd" value="123456" hidden></p>
+  <p>名字：<input type="text" name="username" maxlength="20" size="30" placeholder="请输入用户名" required></p>
+    <p>名字：<input type="text" name="username" maxlength="20" size="30" placeholder="请输入用户名" value="admin" readonly disabled hidden></p>
+  <p>密码：<input type="password" name="pwd" value="123456" size="30" required></p>
   <p>性别：
-      <input type="radio" value="boy" name="sex" disabled>男
-      <input type="radio" value="girl" name="sex">女
+      <input type="radio" value="boy" name="sex" disabled/>男
+      <input type="radio" value="girl" name="sex"/>女
   </p>
   <p>
     <input type="submit">
@@ -71,6 +72,8 @@ pattern 正则表达式判断 用于邮箱，手机号，url的自定义判断
 <!--文件域-->
     <p>
         <input type="file" name="files">
+        <input type="submit" value="上传文件">
+        <input type="reset" value="重置文件">
     </p>
 
 <!--    邮件验证-->
@@ -98,9 +101,12 @@ pattern 正则表达式判断 用于邮箱，手机号，url的自定义判断
 label标签里添加for属性可以将光标锁定到文本框里-->
     <p>
         <label for="mark">你点我试试</label>
-        <input type="text" id="mark">
+        <input type="text" id="mark" name="mark" value="1001" placeholder="请输入mark">
     </p>
 
+</form>
+<form action="3.图像标签.html" method="post">
+    <input type="image" src="../resources/image/缺氧.png" value="图片按钮" alt="缺氧" name="btn3">
 </form>
 </body>
 </html>

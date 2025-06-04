@@ -7,17 +7,24 @@
     <title>Document</title>
 
     <style>
+      h1{
+        text-align: center;
+      }
       span {
         color: rgb(61, 241, 15);
 
-        /* 字体 斜粗体 大小/行高 样式 */
+        /* 字体 斜粗体 大小/行高 样式
+         font-family 风格 可以设置两种字体,中英文
+         font-size 大小
+         font-weight 粗细
+         */
         font: oblique bold 80px/100px Arial;
       }
       p {
         /* 缩进 em中文字长度 */
         /* 行高和块高度一样字体就会行居中 */
         text-indent: 2em;
-        line-height: 30px;
+        line-height: 40px;
       }
       .l1 {
         text-decoration: underline;
@@ -41,8 +48,9 @@
   <body>
     <!-- span标签突出显示一些字 -->
     <p>欢迎学习<span>Java网页</span></p>
+    <h1>故事介绍</h1>
     <p>
-      考场外紧张到没有灵魂的爸爸 网友：没有表情但又表情丰富 7日，陕西西安
+      考场外紧张到没有灵魂的爸爸 <span>网友</span>：没有表情但又表情丰富 7日，陕西西安
       随着考生们陆续进入考场 等候在考点外的家长们表情各不相同
       视频中，这位父亲目视前方 脸上的表情可以说没有表情 但又感觉表情丰富
       手指捻着小纸片 肉眼可见的紧张
@@ -51,7 +59,7 @@
     <p class="l2">123123</p>
     <p class="l3">123123</p>
     <p>
-      <img src="../resources/image/可爱汤圆.png" alt="汤圆" />
+      <img src="../resources/image/可爱汤圆.png" alt="汤圆" title="tangyuan"/>
       你好
     </p>
     <a href="https://www.baidu.com" class="link">百度链接</a>

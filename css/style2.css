@@ -1,0 +1,10 @@
+h1 {
+    color: green;
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: normal;
+}
+p {
+    font-size: 80px;
+}

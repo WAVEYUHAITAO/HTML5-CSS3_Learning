@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!--规范,<style>可以编写css代码，每一个声明使用分号结尾
+    语法：
+        选择器{
+            声明1;
+            声明2;
+            声明3;
+        }
 
+    -->
+    <!--
     <style>
       h1 {
         color: green;
@@ -16,8 +25,18 @@
         font-size: 80px;
       }
     </style>
+    -->
+    <!--
+    <link rel="stylesheet" href="../css/style2.css">
+    -->
+    <style>
+      /*导入式调用外部css,是css2.1的方法,渲染的时候可能会先显示骨架然后再渲染*/
+      @import url("../css/style2.css");
+    </style>
   </head>
   <body>
+<!-- css优先级:行内样式>内部样式，外部样式，
+      内部样式和外部样式遵循就近原则，哪个离这行代码近就是哪个生效-->
     <h1>学java</h1>
     <h1>学java</h1>
     <p>听说读写</p>
